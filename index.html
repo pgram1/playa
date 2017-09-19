@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Playa</title>
+</head>
+<body onload="setURLOptions()">
+
+<!–– Input field ––>
+<div style="width:250px;height:125px;margin:20px;">
+Audio Source:<br>
+<input type="text" id="inputData"><br>
+<button type="button" onclick="action()"/>Submit</button><br>
+<button type="button" onclick="reset()"/>Reset</button>
+</div>
+
+<!–– Player ––>
+<audio id="audioElement" controls loop preload="none" style="width:250px;height:125px;margin:20px;">
+<source id="audioSource" src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&q=Please choose a source.">
+</audio>
+
+<!–– Script for input field ––>
+<script type="text/javascript">
+
+function action(){
+
+	var xsrc = document.getElementById("inputData").value;
+
+	if(!xsrc.trim()){
+		document.getElementById("audioSource").src = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&q=Please choose a source.";
+	}
+	else{
+		document.getElementById("audioSource").src = xsrc;
+	}
+
+	document.getElementById("audioElement").load();
+
+}
+
+function reset(){
+
+	document.getElementById("inputData").value = "";
+	setURLOptions();
+
+}
+
+</script>
+
+<!–– Script for input through URL parameter ––>
+<script type="text/javascript">
+
+function setURLOptions(){
+
+	var arg = window.location.href.split('#')[1];
+	if(!arg){
+		document.getElementById("audioSource").src = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&q=Please choose a source.";
+	}
+	else{
+		document.getElementById("audioSource").src = arg;
+	}
+	document.getElementById("audioElement").load();
+
+}
+
+</script>
+
+</body>
+</html>
+

@@ -20,7 +20,7 @@ To do the later, you may add a `#` after the URL of the player and paste in the 
 
 Example:
 
-[https://pgram1.github.io/playa/#http://ai-radio.org/192.mp3](https://pgram1.github.io/playa/#http://ai-radio.org/192.mp3)
+[https://pgram1.github.io/playa/#http://radio.plaza.one/mp3](https://pgram1.github.io/playa/#http://radio.plaza.one/mp3)
 
 The whole execution of the utility is done locally, live. No reloads needed.
 

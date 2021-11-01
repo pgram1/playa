@@ -49,7 +49,7 @@ function reset(){
 
 function setURLOptions(){
 
-	var arg = window.location.href.split('#')[1];
+	var arg = window.location.href.split('?--')[1];
 	if(!arg){
 		document.getElementById("audioSource").src = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-GB&q=Please choose a source.";
 	}

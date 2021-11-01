@@ -16,11 +16,11 @@ Playa can be used in two ways:
 
 2. Using the URL itself to load content directly on the player.
 
-To do the later, you may add a `#` after the URL of the player and paste in the direct link to your source. This should load it on the player and this whole URL is sharable with others.
+To do the later, you may add a `?src=` after the URL of the player and paste in the direct link to your source. This should load it on the player and this whole URL is sharable with others.
 
 Example:
 
-[https://pgram1.github.io/playa/#http://radio.plaza.one/mp3](https://pgram1.github.io/playa/#http://radio.plaza.one/mp3)
+[https://pgram1.github.io/playa/?src=http://radio.plaza.one/mp3](https://pgram1.github.io/playa/?src=http://radio.plaza.one/mp3)
 
 The whole execution of the utility is done locally, live. No reloads needed.
 
